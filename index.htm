@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----the library ----------------------------------------------------------------------------->
+    <script type="text/javascript"
+      src="https://unpkg.com/tree-visualizer/src/tree-visualizer.js"></script>
+    <script type="text/javascript"
+      src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
+    <!----animated script calling------------------------------------------------------------------>
+    <script src="src/animation_methods/min/add_animeted.js"></script>
+    <script src="src/animation_methods/min/remove_animated.js"></script>
+    <script src="src/animation_methods/max/add_animated.js"></script>
+    <script src="src/animation_methods/max/remove_animated.js"></script>
+    <!----functions scirpt calling----------------------------------------------------------------->
+    <script src="src/sort.js"></script>
+    <script src="src/function_methods/push-delete.js"></script>
+    <script src="src/function_methods/clear_data.js"></script>
+    <!----emplment the bootstrab and icons-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+      />
+    <title>Document</title>
+
+  </head>
+  <body>
+    <nav>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page"
+            href="home-page.htm">Algo-Visual-MK</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle"
+            data-bss-toggle="dropdown"
+            href="#" role="button" aria-expanded="false">language</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Arabic</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+
+    <div class="container ">
+      <div><h2 class="d-flex justify-content-center p-5">Binary HeapTree
+          DEMO</h2>
+      </div>
+      <div class="text-center">
+
+
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/TEUn5e9B55Q" title="YouTube video
+          player" frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="container p-2">
+        <h3> Min Heap tree visualaiztion</h3>
+      </div>
+      <br>
+      <div class="container border rounded p-2">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <button type="button" class="btn btn-primary "
+              onclick="addAnimeted();">INSERT</button>
+            <button type="button" class="btn btn-primary "
+              onclick="removeAnimeted();">DELETE</button>
+            <button type="button" class="btn btn-primary "
+              onclick="clearData();">CLEARE</button>
+
+            <div class="input-group mb-3 mt-1 w-100">
+              <button class="btn btn-outline-secondary" type="button"
+                id="button-addon1" onclick="pushData();">Push Data</button>
+              <input type="number" id="inputText" class="form-control"
+                placeholder=""
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3 mt-1 w-100">
+              <button class="btn btn-outline-secondary" type="button"
+                id="button-addon1" onclick="deleteValue();">Delete value</button>
+              <input id="deleteText" type="number" class="form-control"
+                placeholder=""
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-12" id="balanceBT"
+            style="height:250px"></div>
+        </div>
+        <div>
+          <!--the array we process-->
+          <!--<p style="display:block ;"></p>-->
+        </div>
+      </body>
+    </html>
