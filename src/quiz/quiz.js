@@ -117,8 +117,7 @@ function checkAnswer(rAnswer, count) {
         if (answers[i].checked)
             theChoosenAnswer = answers[i].dataset.answer;
     }
-    console.log("the rigth answer :" + rAnswer);
-    console.log("the choosen answer :" + theChoosenAnswer);
+
     if (rAnswer === theChoosenAnswer) {
         rightAnswers++;
     }
@@ -141,16 +140,20 @@ function showResults(count) {
         submitButton.remove();
         bullets.remove();
         if (rightAnswers > (count / 2) && rightAnswers < count) {
-            theResults = `<span class="good">Good</span>, ${rightAnswers}:${count}`;
+            theResults = `<div class="row"><button type="button" class="btn btn-primary "
+            >Try Again</button>good.. but try again i beleive in you! ,${rightAnswers}:${count}</div>`;
         } else if (rightAnswers === count) {
-            theResults = `<span class="perfect">perfect</span>, ${rightAnswers}:${count}`;
+            theResults = `<div class="row"><a href="index.htm"><button type="button" class="btn btn-primary m-2 "
+            >Return</button></a>You Did well  ,${rightAnswers}:${count}</div>`;
 
         } else {
-            theResults = `<span class="bad">Bad try Again</span>, ${rightAnswers}:${count}`;
+            theResults = `<div class="row"><a href="index.htm"><button type="button" class="btn btn-primary m-2 "
+            >Try Again</button></a>Ops!.. try again i beleive in you! ,${rightAnswers}:${count}</div>`;
 
         }
         resultsContainer.innerHTML = theResults;
-        resultsContainer.style.padding = "10px";
+
+        resultsContainer.style.padding = "20px";
         resultsContainer.style.backgroundColor = "white";
         resultsContainer.style.marginTop = "10px";
 
@@ -168,7 +171,7 @@ function countDown(duration, count) {
             countDownElement.innerHTML = `${minutes}:${seconds}`;
             if (--duration < 0) {
                 clearInterval(countDownInterval);
-                console.log("finshed");
+
                 submitButton.click();
             }
 
