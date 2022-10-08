@@ -1,0 +1,74 @@
+[
+    {
+        "title": "what is Heap Data Structure?",
+        "answer_1": "A Heap is a Tree-based data structure in which the tree is a binary tree.",
+        "answer_2": "A Heap is a special Tree-based data structure in which the tree is a complete binary tree.",
+        "answer_3": "A Heap is a special Tree-based data structure in which the tree is a  binary tree.",
+        "answer_4": "non of the above",
+        "right_answer": "A Heap is a special Tree-based data structure in which the tree is a complete binary tree."
+    },
+    {
+        "title": "What Are The Operations of Heap Data Structure?",
+        "answer_1": "Heapfiy,Insertion and deletion.",
+        "answer_2": "Insertion and deletion.",
+        "answer_3": "A+B.",
+        "answer_4": "Heapfiy,Insertion,peek and deletion.",
+        "right_answer": "Heapfiy,Insertion,peek and deletion."
+    },
+    {
+        "title": "What Are The Types of Heap Data Structure?",
+        "answer_1": "Max-Heap",
+        "answer_2": "Min-Heap",
+        "answer_3": "All Of The Above",
+        "answer_4": "Non of the above",
+        "right_answer": "All Of The Above"
+    },
+    {
+        "title": "What Are Applications of Heap Data Structure?",
+        "answer_1": "Best First Search(BFS)",
+        "answer_2": "Heap_sort",
+        "answer_3": "Heap is used to construct a priority queue.",
+        "answer_4": "All Of The Above",
+        "right_answer": "All Of The Above"
+    },
+    {
+        "title": "Select The Real-Time Applications of Heap:",
+        "answer_1": "Systems concerned with security use heap sort, like the Linux kernel.",
+        "answer_2": "Patient treatment:In a hospital, an emergency patient, or the patient with more injury",
+        "answer_3": "A+B",
+        "answer_4": "Non of the above",
+        "right_answer": "A+B"
+    },
+    {
+        "title": "Advantages of Heap Data Structure:",
+        "answer_1": "Inserting or Deleting an element in the heap the time complexity is O(log N).",
+        "answer_2": "The time complexity for searching an element in Heap is only O(N).",
+        "answer_3": "printing all elements of the heap in sorted order time complexity is only O(N*log N)",
+        "answer_4": "Memory management is more simple in heap memory because it is used globally",
+        "right_answer": "Inserting or Deleting an element in the heap the time complexity is O(log N)."
+    },
+    {
+        "title": "Disadvantages of Heap Data Structure:",
+        "answer_1": "Heap can be created with O(N) time.",
+        "answer_2": "A binary heap is a balanced binary tree,wich make it hard to implement.",
+        "answer_3": "The time complexity for searching an element in Heap is O(N).",
+        "answer_4": "The time complexity for searching an element in Heap is O(N*N).",
+        "right_answer": "The time complexity for searching an element in Heap is O(N)."
+    },
+    {
+        "title": "Balance this Array [100,25,45,15,35,10,16,16,3] As a Binary-Min-Heap-Tree",
+        "answer_1": "[3,10,15,35,25,16,45,100]",
+        "answer_2": "[3,10,15,35,25,45,16,16,100]",
+        "answer_3": "[3,15,10,25,35,45,16,100]",
+        "answer_4": "[3,10,15,25,35,45,16,100]",
+        "right_answer": "[3,10,15,25,35,45,16,100]"
+    },
+    {
+        "title": "Balance this Array [3,16,10,10,35,15,45,25,100] As a Binary-Max-Heap-Tree",
+        "answer_1": "[100,45,35,15,16,10,10,25,3]",
+        "answer_2": "[100,45,35,15,16,10,25,3]",
+        "answer_3": "[100,45,35,16,15,10,25,3]",
+        "answer_4": "[100,35,45,16,15,10,25,3]",
+        "right_answer": "[100,35,45,16,15,10,25,3]"
+    }
+]
