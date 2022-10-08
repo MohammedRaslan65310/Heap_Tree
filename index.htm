@@ -9,15 +9,18 @@
       src="https://unpkg.com/tree-visualizer/src/tree-visualizer.js"></script>
     <script type="text/javascript"
       src="https://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
-    <!----animated script calling------------------------------------------------------------------>
-    <script src="src/animation_methods/min/add_animeted.js"></script>
-    <script src="src/animation_methods/min/remove_animated.js"></script>
-    <script src="src/animation_methods/max/add_animated.js"></script>
-    <script src="src/animation_methods/max/remove_animated.js"></script>
-    <!----functions scirpt calling----------------------------------------------------------------->
-    <script src="src/sort.js"></script>
-    <script src="src/function_methods/push-delete.js"></script>
-    <script src="src/function_methods/clear_data.js"></script>
+    <!----animated  heap script calling------------------------------------------------------------------>
+    <script src="src/min_heap/animation_method/add_animeted.js"></script>
+    <script src="src/min_heap/animation_method/remove_animated.js"></script>
+    <script src="src/max_heap/animation_methods/add_animated.js"></script>
+    <script src="src/max_heap/animation_methods/remove_animated.js"></script>
+    <!----functions min heap scirpt calling----------------------------------------------------------------->
+    <script src="src/min_heap/function_methods/sort.js"></script>
+    <script src="src/min_heap/function_methods/push-delete.js"></script>
+    <script src="src/min_heap/function_methods/clear_data.js"></script>
+    <!----functions max heap scirpt calling----------------------------------------------------------------->
+    <script src="src/max_heap/function_methods/max_sort.js"></script>
+    <script src="src/max_heap/function_methods/p_d_c.js"></script>
     <!----emplment the bootstrab and icons-->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -28,15 +31,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
       rel="stylesheet"
       />
-    <title>Document</title>
+    <title>www.algo-vis.com/heap-tree</title>
 
   </head>
-  <body>
+  <body class="pb-4">
+
     <nav>
       <ul class="nav nav-pills">
         <li class="nav-item">
           <a class="nav-link " aria-current="page"
-            href="home-page.htm">Algo-Visual-MK</a>
+            href="home-page.htm">Algo-Vis</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle"
@@ -54,7 +58,7 @@
 
     <div class="container ">
       <div><h2 class="d-flex justify-content-center p-5">Binary HeapTree
-          DEMO</h2>
+        </h2>
       </div>
       <div class="text-center">
 
@@ -66,20 +70,108 @@
           encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
       </div>
+      <div class="countainer-info">
+        <div class="heap-info">
+          <div class="row">
+            <div class="col-md-12 mt-3">
+              <!--the definistion-->
+              <h3>What is Heap Data Structure?</h3>
+              <p class="p-2">A Heap is a special Tree-based data structure in
+                which the tree
+                is a complete binary tree.</p>
+              <!--the methods-->
+              <h4>Operations of Heap Data Structure:</h4>
+              <ul>
+                <li>Heapify: a process of creating a heap from an array.</li>
+                <li>Insertion: process to insert an element in existing heap
+                  time complexity O(log N).</li>
+                <li>Deletion: deleting the top element of the heap or the
+                  highest priority element, and then organizing the heap and
+                  returning the element with time complexity O(log N).</li>
+                <li>Peek: to check or find the most prior element in the heap,
+                  (max or min element for max and min heap).</li>
+              </ul>
+              <!--the type-->
+              <h3>Types of Heap Data Structure</h3>
+              <p>Generally, Heaps can be of two types:</p>
+              <ol>
+                <li>Max-Heap: In a Max-Heap the key present at the root node
+                  must be greatest among the keys present at all of it's
+                  children. The same property must be recursively true for all
+                  sub-trees in that Binary Tree.</li>
+                <li>Min-Heap: In a Min-Heap the key present at the root node
+                  must be minimum among the keys present at all of it's
+                  children. The same property must be recursively true for all
+                  sub-trees in that Binary Tree.</li>
+              </ol>
+
+            </div>
+            <div class="app-container row ">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="application">
+                  <h4 class="">Application of Heap Data Structure:</h4>
+                  <ul>
+                    <li>Heap is used to construct a priority queue.</li>
+                    <li>Heap sort is one of the fastest sorting algorithms with
+                      time complexity of O(N* log(N), and it's easy to
+                      implement.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <div class="real-time-application">
+                  <h4 class="">Real-Time Application of Heap:</h4>
+                  <ul>
+                    <li>Patient treatment: In a hospital, an emergency patient,
+                      or
+                      the patient with more injury is treated first. Here the
+                      priority is the degree of injury.</li>
+                    <li>Systems concerned with security use heap sort, like the
+                      Linux kernel.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <table class="table table-striped">
+              <tr>
+                <td>Advantages of Heap</td>
+                <td>Disadvantages of Heap</td>
+              </tr>
+              <tr>
+                <td>Less time complexity, for inserting or deleting an element
+                  in the heap the time complexity is just O(log N).</td>
+                <td>The time complexity for searching an element in Heap is
+                  O(N).</td>
+              </tr>
+              <tr>
+                <td>To just peek at the most prior element the time complexity
+                  is constant O(1)</td>
+                <td>To print all elements of the heap in sorted order time
+                  complexity is O(N*log N), whereas, for BST, it takes only O(N)
+                  time.</td>
+              </tr>
+              <tr>
+                <td>A binary heap is a balanced binary tree, and easy to
+                  implement.</td>
+                <td>Memory management is more complex in heap memory </td>
+              </tr>
+              <tr></tr>
+            </table>
+          </div>
+        </div>
+      </div>
       <div class="container p-2">
         <h3> Min Heap tree visualaiztion</h3>
       </div>
       <br>
-      <div class="container border rounded p-2">
+
+      <div class="container border rounded p-2 m-2">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <button type="button" class="btn btn-primary "
               onclick="addAnimeted();">INSERT</button>
             <button type="button" class="btn btn-primary "
               onclick="removeAnimeted();">DELETE</button>
-            <button type="button" class="btn btn-primary "
-              onclick="clearData();">CLEARE</button>
-
             <div class="input-group mb-3 mt-1 w-100">
               <button class="btn btn-outline-secondary" type="button"
                 id="button-addon1" onclick="pushData();">Push Data</button>
@@ -101,9 +193,69 @@
           <div class="col-lg-8 col-md-8 col-sm-12" id="balanceBT"
             style="height:250px"></div>
         </div>
+        <button type="button" class="btn btn-primary w-100 "
+          onclick="clearData();">CLEARE</button>
         <div>
           <!--the array we process-->
           <!--<p style="display:block ;"></p>-->
         </div>
-      </body>
-    </html>
+      </div>
+      <div class="container p-2">
+        <h3> Max Heap tree visualaiztion</h3>
+      </div>
+
+      <div class="container border rounded p-3 m-2 ">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <button type="button" class="btn btn-primary "
+              onclick="addAnimatedM();">INSERT</button>
+            <button type="button" class="btn btn-primary "
+              onclick="removeAnimatedM();">DELETE</button>
+
+            <div class="input-group mb-3 mt-1 w-100">
+              <button class="btn btn-outline-secondary" type="button"
+                id="button-addon1 inputTextMax" onclick="pDM();">Push Data</button>
+              <input type="number" id="inputTextMax" class="form-control"
+                placeholder=""
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+            </div>
+
+            <div class="input-group mb-3 mt-1 w-100">
+              <button class="btn btn-outline-secondary" type="button"
+                id="button-addon1" onclick="deleteValueM();">Delete value</button>
+              <input id="deleteTextmax" type="number" class="form-control"
+                placeholder=""
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-sm-12" id="balancemaxBT"
+            style="height:250px"></div>
+        </div>
+        <button type="button" class="btn btn-primary w-100 "
+          onclick="clearM();">CLEARE</button>
+        <div>
+          <!--the array we process-->
+          <!--<p style="display:block ;"></p>-->
+        </div>
+      </div>
+      <div class="p-3"></div>
+      <div class="quiz-body border rounded">
+        <h6 class="m-1">Still have some doubt?</h6>
+        <div class="row">
+          <img id="quiz-img" src="assets/img/Quiz_Time.jpg" class="pl-4 m-2"
+            alt="Quiz
+            time
+            with speacker">
+          <p>You can Start a POP-Quiz now!</p>
+        </div>
+        <div class="text-center p-2 m-2">
+          <a href="#">
+            <button type="button" class="btn btn-primary w-50 ">Start</button>
+          </a>
+        </div>
+      </div>
+    </body>
+  </html>

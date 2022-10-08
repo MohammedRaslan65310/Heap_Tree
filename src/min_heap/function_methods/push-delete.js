@@ -2,11 +2,14 @@ let arr = [];
 function drawData(zz) {
     let balanceBTDiv = document.getElementById("balanceBT");
     balanceBTDiv.style.overflow = "scroll";
-    balanceBTDiv.style.background = "rgb(171,216,167)"
+    balanceBTDiv.style.background = "rgb(255,255,255)"
     let balanceBT = treeVisualizer(
         {
             target: "balanceBT",
-            animation: true
+            animation: true,
+            boxColor: "rgb(84,161,255)",
+            textColor: "rgb(255,255,255)",
+            arrowColor: "rgb(255,163,99)",
         }
     );
 

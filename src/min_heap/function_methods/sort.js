@@ -64,7 +64,7 @@ function sort(nodes) {
     }
 
     minHeapTree();
-    
+
     // Printing the list.
     for (let i = 1; i < nodes.length; i++) {
 

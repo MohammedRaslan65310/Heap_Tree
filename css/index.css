@@ -9,3 +9,13 @@ nav a {
 .container h2 {
     color: #f99023;
 }
+
+#quiz-img {
+    width: 150px;
+    min-width: 100px;
+    max-width: 300px;
+}
+
+h6 {
+    font-size: large;
+}
