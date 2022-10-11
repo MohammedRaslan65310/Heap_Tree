@@ -140,8 +140,8 @@ function showResults(count) {
         submitButton.remove();
         bullets.remove();
         if (rightAnswers > (count / 2) && rightAnswers < count) {
-            theResults = `<div class="row"><button type="button" class="btn btn-primary "
-            >Try Again</button>good.. but try again i beleive in you! ,${rightAnswers}:${count}</div>`;
+            theResults = `<div class="row"><a href="index.htm"><button type="button" class="btn btn-primary m-2 "
+            >Try Again</button></a>Good!..but try again i beleive in you! ,${rightAnswers}:${count}</div>`;
         } else if (rightAnswers === count) {
             theResults = `<div class="row"><a href="index.htm"><button type="button" class="btn btn-primary m-2 "
             >Return</button></a>You Did well  ,${rightAnswers}:${count}</div>`;

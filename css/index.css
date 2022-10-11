@@ -7,7 +7,79 @@ nav a {
 }
 
 .container h2 {
-    color: #f99023;
+    margin: 10px;
+
+}
+
+.title {
+    margin: 10px;
+    border: solid;
+    border-radius: 7px;
+    border-color: #0f57a1;
+}
+
+h2 {
+
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+}
+
+h3 {
+
+    padding: 5px;
+    margin: 10px;
+    border: solid;
+    border-radius: 7px;
+    border-color: #0f57a1;
+
+
+}
+
+h4 {
+    padding: 5px;
+    margin: 10px;
+    border: solid;
+    border-radius: 7px;
+    border-color: #0f57a1;
+}
+
+h5 {
+    padding: 5px;
+    margin: 10px;
+    border: solid;
+    border-radius: 7px;
+    border-color: #0f57a1;
+}
+
+h6 {
+    padding: 5px;
+    margin: 10px;
+    border: solid;
+    border-radius: 7px;
+    border-color: #0f57a1;
+}
+
+p {
+    color: rgb(150, 150, 150);
+}
+
+li {
+    color: rgb(150, 150, 150);
+}
+
+.blue {
+    font-weight: bold;
+
+    color: #0f57a1;
+}
+
+li {
+    list-style-type: circle;
+
+}
+
+td {
+    color: rgb(150, 150, 150);
 }
 
 #quiz-img {
