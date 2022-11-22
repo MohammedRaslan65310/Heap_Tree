@@ -1,3 +1,4 @@
+//This function for clear all the data in the tree.
 function clearData() {
     let balanceBTDiv = document.getElementById("balanceBT");
     balanceBTDiv.style.overflow = "scroll";

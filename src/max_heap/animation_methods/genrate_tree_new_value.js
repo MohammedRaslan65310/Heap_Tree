@@ -1,8 +1,10 @@
+//This methode for animate how the max heap tree work if inserted a value
 function addAnimatedM() {
-
+    //get the element 'background' from id and do som sitting on it.
     let balanceBTDiv = document.getElementById("balancemaxBT");
     balanceBTDiv.style.overflow = "scroll";
     balanceBTDiv.style.background = "rgb(255,255,255)"
+    //init the object from the tree visualaizer class.
     let balancemaxBT = treeVisualizer(
         {
             target: "balancemaxBT",
@@ -14,12 +16,14 @@ function addAnimatedM() {
         }
 
     );
-
+    //call the draw function on the object.
     balancemaxBT.drawData(
         [{
             data: "[50,10,30,5,7,15,20]",
         }], `<div class="d-flex justify-content-center">start</div>`
     )
+    //call the next steps function for the animation.
+    //This way is the basic one we can improve it later. 
     balancemaxBT.nextStep(
         [{
             data: "[50,10,30,5,7,15,20,60]",

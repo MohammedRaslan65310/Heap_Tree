@@ -1,8 +1,10 @@
-//this methode for animate how the tree work if inserted a value
+//This methode for animate how the min heap tree work if inserted a value
 function addAnimeted() {
+    //Init the back ground and do some setting on it.
     let balanceBTDiv = document.getElementById("balanceBT");
     balanceBTDiv.style.overflow = "scroll";
     balanceBTDiv.style.background = "rgb(255,255,255)"
+    //Init the object from the Tree visualizer class.
     let balanceBT = treeVisualizer(
         {
             target: "balanceBT",
@@ -15,12 +17,15 @@ function addAnimeted() {
         }
     );
 
-    //draw the tree
+    //Call the draw funcrion
     balanceBT.drawData(
         [{
             data: "[5,7,15,50,10,30,20]",
         }], `<div class="d-flex justify-content-center">start</div>`
-    )//first step animated
+    )
+    //Call the next step function.
+    //This way is the basic one we can improve it later.
+    //first step animated
     balanceBT.nextStep(
         [{
             data: "[5,7,15,50,10,30,20,3]",

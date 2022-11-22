@@ -20,6 +20,7 @@ function drawData(zz) {
         }], `<div class="d-flex justify-content-center"></div>`
     )
 }
+//This function for add a certin value in the tree and call the sort algorithm and the draw data for the tree.
 function pushData() {
     let inputText = document.getElementById('inputText').value;
 
@@ -46,6 +47,7 @@ function pushData() {
 
     //document.getElementById('pText').innerHTML = pval;
 }
+//This function for delete a certin value from the tree and re sorted as a min heap tree.
 function deleteValue() {
     let deleteText = document.getElementById('deleteText').value;
     let flag = false;
@@ -66,6 +68,7 @@ function deleteValue() {
 
     drawData(zz);
     if (flag === false) {
+        //this alert should replaced with onther box msg cuz it so cring..
         alert("not found");
     }
 

@@ -1,3 +1,9 @@
+body {
+
+    height: 10000px;
+
+}
+
 nav {
     background-color: #0f57a1;
 }
@@ -6,88 +12,27 @@ nav a {
     color: whitesmoke;
 }
 
-.container h2 {
-    margin: 10px;
+/*start head*/
+.container {}
 
-}
-
-.title {
-    margin: 10px;
-    border: solid;
-    border-radius: 7px;
-    border-color: #0f57a1;
-}
-
-h2 {
-
-    border-radius: 7px;
-    color: rgb(0, 0, 0);
-}
-
-h3 {
-
-    padding: 5px;
-    margin: 10px;
-    border: solid;
-    border-radius: 7px;
-    border-color: #0f57a1;
-
-
-}
-
-h4 {
-    padding: 5px;
-    margin: 10px;
-    border: solid;
-    border-radius: 7px;
-    border-color: #0f57a1;
-}
-
-h5 {
-    padding: 5px;
-    margin: 10px;
-    border: solid;
-    border-radius: 7px;
-    border-color: #0f57a1;
-}
-
-h6 {
-    padding: 5px;
-    margin: 10px;
-    border: solid;
-    border-radius: 7px;
-    border-color: #0f57a1;
-}
-
-p {
-    color: rgb(150, 150, 150);
-}
-
-li {
-    color: rgb(150, 150, 150);
-}
-
-.blue {
-    font-weight: bold;
-
+.container .title {
     color: #0f57a1;
 }
 
-li {
-    list-style-type: circle;
-
+.container p {
+    color: #f99023;
 }
 
-td {
-    color: rgb(150, 150, 150);
+.container hr {
+    color: #0f57a1;
 }
 
-#quiz-img {
-    width: 150px;
-    min-width: 100px;
-    max-width: 300px;
+/*end head*/
+.container-body {
+    height: 300px;
+    bottom: auto;
 }
 
-h6 {
-    font-size: large;
+.card-1 {
+    border-radius: 1rem;
 }

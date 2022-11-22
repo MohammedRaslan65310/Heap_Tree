@@ -1,8 +1,10 @@
+//This methode for animate how the max heap tree work if the root value deleted.
 function removeAnimatedM() {
-
+    //get the element 'background' from id and do som sitting on it.
     let balanceBTDiv = document.getElementById("balancemaxBT");
     balanceBTDiv.style.overflow = "scroll";
     balanceBTDiv.style.background = "rgb(255,255,255)"
+    //init the object from the tree visualaizer class.
     let balancemaxBT = treeVisualizer(
         {
             target: "balancemaxBT",
@@ -12,16 +14,15 @@ function removeAnimatedM() {
             arrowColor: "rgb(255,163,99)",
 
         }
-
     );
-
-
-
+    //call the draw function on the object.
     balancemaxBT.drawData(
         [{
             data: "[101,18,37,16,3,27,1,2,8]",
         }], `<div class="d-flex justify-content-center">start</div>`
     )
+    //call the next steps function for the animation.
+    //this way is the basic one we can improve it later. 
     balancemaxBT.nextStep(
         [{
             data: "[101,18,37,16,3,27,1,2,8]",
